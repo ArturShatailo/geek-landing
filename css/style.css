@@ -1,0 +1,289 @@
+*,
+html,
+body {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+	font-family: 'Mina', 'Arial', sans-serif;
+}
+
+.menuBar{
+	display: flex; justify-content: space-around; align-items: center; flex-direction: column; position: fixed; padding: 20px 40px; width: 150px; z-index: 2000;
+}
+
+.managerSections{
+	display: flex; justify-content: flex-start; align-items: center; flex-direction: column; 
+}
+
+.buttonsUpDown{
+	display: flex; justify-content: space-around; align-items: center; flex-direction: column; height: 120px; 
+}
+.stickImg{
+	background-image: url(../img/stick.png); width: 2px; height: 40px;
+}
+
+.section01{
+	display: flex; justify-content: flex-end; align-items: center; padding-top: 40px;  padding-right: 20px;
+}
+.section02{
+	display: flex; justify-content: flex-start; align-items: flex-start; padding-top: 20px; flex-direction: column; position: relative;
+}
+h1{
+	text-align: center; width: 100%; font-size: 30px; padding: 40px;
+}
+.discriptionS02{
+	width: 43%; position: absolute; top: 25%; left: 40.5%; border: 3px solid #b8a47e; display: flex; justify-content: center; align-items: center; padding-bottom: 20px
+}
+.titleS02{
+	width: 50%;
+}
+.discrS02{
+	width: 50%; height: 180px; overflow-y: hidden;
+}
+.discrS02 p{
+	padding: 10px; font-size: 15px; color: grey;
+}
+.moreS2{
+	width: 79px; height: 50px; position: absolute; background-color: white; left: 65%; top: 95%; background-image: url(../img/moreStick.png); background-size: contain; background-repeat: no-repeat; background-position: center; cursor: pointer; z-index: 100;
+}
+
+.sectionControl{
+	width: 40px; height: 40px; display: flex; justify-content: center; align-items: center; transition: 0.3s; position: relative; margin: 5px
+}
+
+.sectionControl a{
+	color: #8e8e8e; transition: 0.3s;
+}
+
+.sectionControl a:hover{
+	color: black;  padding: 40px;
+}
+.sectionControl:hover{
+	font-size: 24px; border-radius: 50%; box-shadow: 0 0 20px 2px grey;  padding: 40px;
+}
+
+.goods{
+	display: none; justify-content: space-around; width: 200px; align-items: center; position: absolute; left: 65px; height: 100%
+}
+.goods a{
+	color: #8e8e8e; transform: scale(1.0); transition: 0.3s; font-size: 14px;
+}
+.goods a:hover{
+	color: black; transform: scale(1.3);
+}
+
+.sectionControl:hover .goods{
+	display: flex
+}
+
+.stickImgG{
+	background-image: url(../img/stickGor.png); width: 39px; height: 2px;
+}
+.side{
+	background-image: url(../img/side.png); width: 10px; height: 16px;
+}
+
+
+.sliders{
+	display: flex; justify-content: flex-start; align-items: center; width: 100%; flex-direction: column; position: relative; margin-top: 80px;
+}
+.imagesSW{
+	display: flex; justify-content: space-around; margin: 20px; align-items: flex-end; 
+}
+.imagesSW img{
+	margin: 40px 30px; position: relative; z-index: 50; 
+}
+.controlsSlider{
+	display: flex; justify-content: space-around; align-items: center; padding: 5px 20px; width: 30%;
+}
+.prevItemSW p, nextItemSW p{
+	font-size: 14px; color: gray; width: 20px; height: 20px;
+}
+.currentItemSW{
+	border-radius: 50%; box-shadow: 0 0 20px 2px grey; padding: 30px; position: relative; 
+}
+.currentItemSW p{
+	width: 34px; height: 34px; font-size: 24px; color: black; text-align: center; 
+}
+.currentItemSW::before{
+	content: ''; display: block; width: 1px; height: 70px; position: absolute; bottom: 100%; left: 50%; background-color: black; z-index: 1000;
+}
+.prevSW{
+	width: 60px; height: 100px; background-image: url(../img/prev.png); cursor: pointer; background-repeat: no-repeat; background-position: center; transform: scale(1); transition: 0.3s;
+}
+.nextSW{
+	width: 60px; height: 100px; background-image: url(../img/next.png); cursor: pointer; background-repeat: no-repeat; background-position: center; transform: scale(1); transition: 0.3s;
+}
+.prevSW:hover, .nextSW:hover{
+	transform: scale(1.3);
+}
+.priceBlock{
+	display: flex; justify-content: center; align-items: center; padding: 10px 30px; border: 2px solid black; position: absolute; top: 0px; left: 16%; width: 43%; flex-direction: column; 
+}
+.priceBlock h3{
+	text-align: left; font-size: 35px; color: black; margin: 30px; width: 100%; font-weight: 500;
+}
+
+.priceBlock p{
+	text-align: left; font-size: 24px; color: grey; margin: 20px; font-weight: 600; width: 40%; cursor: pointer; transform: scale(1); transition: 0.2s
+}
+
+.openPopUp:hover{
+    transform: scale(1.2);
+}
+
+.section03, .section04{
+	display: flex; justify-content: flex-start; align-items: flex-end; padding: 40px 0; flex-direction: column; position: relative; background-color: #ededed; margin-top: 30px;
+}
+.section04{
+	padding-bottom: 11%;
+}
+.discriptionS03{
+	width: 43%; position: absolute; top: 25%; right: 40.5%; border: 3px solid #b8a47e; display: flex; justify-content: center; align-items: center; padding-bottom: 20px
+}
+.titleS03, .titleS04{
+	width: 50%; display: flex; justify-content: flex-end; align-items: center; color: white; font-size: 18px; padding: 40px; margin-bottom: -30px;
+}
+.discrS03, .discrS04{
+	width: 50%; height: 180px; overflow-y: hidden;
+}
+.discrS03 p{
+	padding: 10px; font-size: 15px; color: grey;
+}
+.moreS3, .moreS4{
+	width: 79px; height: 50px; position: absolute; left: 15%; top: 95%; background-image: url(../img/moreStick.png); background-size: contain; background-repeat: no-repeat; background-position: center; cursor: pointer; z-index: 100;
+}
+
+.discriptionS04{
+	width: 38%; position: absolute; top: 25%; right: 1%; border: 3px solid #b8a47e; display: flex; justify-content: center; align-items: center; padding-bottom: 20px
+}
+.contSizer{
+	width: 100%; position: absolute;top: 44%; height: 200px;
+}
+.discrS04 p{
+	padding: 20px; font-size: 15px; color: grey;
+}
+.footer{
+    display: flex; justify-content: space-between; padding: 20px; align-items: flex-end; background-color: #ededed; margin-top: 30px; width: 100%;
+}
+.logofooter{
+    display: flex; flex-direction: column; align-items: flex-start; padding: 10px;
+}
+.logofooter p{
+    font-size: 14px; color: #383838; text-transform: uppercase; margin-top: 10px;
+}
+.contactfooter{
+    display: flex; flex-direction: column; align-items: flex-end;
+}
+.contactfooter p{
+    font-size: 14px; color: #383838; text-transform: uppercase; margin-top: 15px; font-weight: 600;
+}
+.contLinks{
+    margin-top: 5px; display: flex; align-items: center; justify-content: space-around; padding: 5px;
+}
+.contLinks a{
+    margin: 20px 0px 20px 100px; position: relative; font-size: 17px; padding: 5px 0; color: #383838; font-weight: 600;
+}
+.contLinks a::before{
+    content: ''; display: block; position: absolute; width: 30px; height: 2px; left: -40px; top: 50%; background-color: #b8a47e;    
+}
+.contLinks a::after{
+    content: ''; display: block; position: absolute; width: 4px; height: 4px; right: -10px; top: 50%; background-color: #b8a47e; border-radius: 50%;   
+}
+
+
+
+.popUpBack{
+    position: fixed; display: flex; align-items: center; justify-content: center; background-color: rgba(255, 255, 255, 0.88); width: 100vw; height: 100vh; top: 0px; left: 0px; display: none; z-index: 2001
+}
+.popUp{
+display: flex; justify-content: space-around; align-items: center; width: 900px; padding: 10px; margin: auto; background-color: white; box-shadow: 0 0 20px 2px grey; position: relative; max-height: 90vh; 
+}
+
+.popUpImg{
+    display: flex; justify-content: center; align-items: center; flex-direction: column; 
+}
+.pricepopup{
+    margin-bottom: 20px;
+}
+
+.amountpopup{
+    display: flex; width: 150px; justify-content: space-around; align-items: center; margin-top: 20px; font-size: 30px; height: 30px
+}
+.topup{
+    width: 21px; height: 21px; background-size: contain; background-image: url(../img/plus.png); transform: scale(1); transition: 0.2; cursor: pointer;
+}
+.down{
+    width: 21px; height: 21px; background-size: contain; background-image: url(../img/minus.png); transform: scale(1); transition: 0.2; cursor: pointer;
+}
+
+.down:active, .topup:active{
+    transform: scale(0.8);
+}
+
+.infoSide{ max-width: 400px; padding: 10px; display: flex;align-items: flex-start; flex-direction: column;
+}
+.binpopup{
+    position: absolute; top: 2px; left: 2px;
+}
+.popUpinfo{
+    display: flex; justify-content: center; align-items: flex-start; flex-direction: column; margin-top: 29px
+}
+
+.contactlanding{
+	display: flex; justify-content: center; align-items: flex-start; flex-direction: column; width: 100%;
+}
+.navTabPop ul{
+	display: flex; justify-content: center; align-items: center;
+}
+.navTabPop ul li{
+	display: flex; justify-content: center; align-items: center; flex-direction: column; margin-right: 100px; margin-top: 20px;
+}
+.navTabPop ul li a{
+	padding: 5px; font-size: 18px; 
+}
+
+#delivery p, #characteristics p{
+	font-size: 12px;  padding-right: 20px; max-height: 240px
+}
+.navTabPop{
+	padding-right: 10px; min-height: 300px;
+}
+#delivery, #characteristics{
+	margin-top: 20px; padding-right: 10px; margin-bottom: 20px; overflow-y: scroll;
+} 
+#delivery{
+	display: none;
+}
+
+#email, #phone{
+	margin-bottom: 10px; border: none; border-bottom: 1px solid #c7c7c7; width: 80%; outline: none;
+}
+.submitBut{
+	width: 40%; border-radius: 30px; height: 35px; border: none; background-color: #b8a47e; color: white; transition: 0.2s; cursor: pointer; outline: none; text-align: center; box-shadow: 0 0 15px 4px grey; font-size: 20px;
+}
+
+.submitBut:hover{
+	box-shadow: 0 0 0px 0px grey;
+}
+.warantyText{
+	font-size: 12px; color: grey; width: 110%; text-transform: uppercase; margin-top: 20px;
+}
+.navTab{
+	color: gray;
+}
+.closePopUp{
+    display: block; position: absolute; top: 0px; right: 0px; width: 30px; height: 30px; background-image: url(../img/close.png); background-size: contain; cursor: pointer; 
+}
+
+.order{
+    display: none; padding: 20px; position: fixed; top: 0px; left: 30%; background-color: rgba(115, 227, 120, 0.74); z-index: 9000; font-weight: 600
+}
+.popmsg{
+    text-align: center;
+}
+.to-main{
+    color: #0e7c00;
+}
